@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                // Deploy your application using pm2
+                // Deploy your application using pm2 /Demo to check PR 
                 dir('/opt/deployment/react') {
                     sh 'sudo pm2 serve . 8081 --spa' // Start the application
                 }
